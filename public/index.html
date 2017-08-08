@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="javascripts/jquery-2.0.0.min.js"></script>
+</head>
+<body>
+<p></p>
+<a></a>
+</body>
+<script>
+    $.ajax({
+        url:'http://localhost:8005/text/text',
+        type:'get',
+        async:true,
+        data:{uid:0},
+        success:function (data) {
+            console.log(data)
+        }
+    })
+
+</script>
+</html>
